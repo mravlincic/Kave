@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout"
+    android:background="#271811">
+
+    <LinearLayout
+        android:backgroundTint="#513123"
+        android:weightSum="16"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+
+        <ImageView
+            android:id="@+id/btnBack"
+            app:tint="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="3"
+            android:src="@drawable/ic_baseline_navigate_before_24"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Ukupno u košarici: "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtKn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="11"
+            android:text=" kn"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel"
+        android:clipToPadding="false"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:id="@+id/reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezerviraj  proizvode"
+        android:layout_below="@id/recycler_cart"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_below="@id/reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#80FFFFFF"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#80FFFFFF"
+        android:text=""/>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#271811">
+
+    <TextView
+        android:id="@+id/imeapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="KATALOG KAVA"
+        android:textSize="44sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/ikona"
+        app:layout_constraintTop_toBottomOf="@id/imeapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ikona"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:backgroundTint="@color/white"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/ikona"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:backgroundTint="@color/white"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Lozinka"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="PRIJAVA"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registracija"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/register"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Nemate korisnički račun?" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:padding="8dp"
+    android:layout_marginTop="7dp"
+    android:backgroundTint="#513123">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:weightSum="5">
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/imageView"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/txtName"
+            android:layout_marginLeft="18dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_btnminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnMinus"
+            app:layout_constraintStart_toStartOf="@id/txtName"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            />
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/txtQuantity"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="@id/btnMinus"
+            app:layout_constraintLeft_toRightOf="@id/btnMinus"
+            />
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_btnplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlus"
+            app:layout_constraintStart_toEndOf="@id/txtQuantity"
+            app:layout_constraintTop_toTopOf="@id/btnMinus"
+
+            />
+
+
+        <ImageView
+            android:tint="@color/white"
+            android:layout_marginLeft="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDelete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            android:src="@drawable/ic_baseline_delete_forever_24"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKn"
+            android:textSize="18dp"
+            android:text="kn"
+            app:layout_constraintEnd_toEndOf="@id/btnDelete"
+            app:layout_constraintTop_toBottomOf="@id/btnDelete"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+            android:textSize="18dp"
+            android:text="price"
+            app:layout_constraintEnd_toStartOf="@id/txtKn"
+            app:layout_constraintTop_toTopOf="@id/txtKn"/>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "76656018921",
+    "firebase_url": "https://aplikacijazr-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "aplikacijazr",
+    "storage_bucket": "aplikacijazr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76656018921:android:651cad57b41d19d3b4f778",
+        "android_client_info": {
+          "package_name": "hr.ess.kave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76656018921-9tg6sn5n01veb9b7ia786dlac2oqk1g8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2bh4eQzrkHp5ksPPMUe5P60eTxrbryw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76656018921-9tg6sn5n01veb9b7ia786dlac2oqk1g8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76656018921:android:b7c308b26ad868aeb4f778",
+        "android_client_info": {
+          "package_name": "hr.mravlincic.kave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76656018921-9tg6sn5n01veb9b7ia786dlac2oqk1g8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2bh4eQzrkHp5ksPPMUe5P60eTxrbryw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76656018921-9tg6sn5n01veb9b7ia786dlac2oqk1g8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
